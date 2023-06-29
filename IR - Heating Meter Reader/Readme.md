@@ -1,4 +1,8 @@
 Upload kmp.h and multicalwater.h to /config/esphome, and create a new device in Esphome using the district-water-reader.yaml as refrence.
+Inspiration for the code.
+https://github.com/cenobitedk/esphome_multical402
+
+
 
 Components needed.
 
@@ -29,6 +33,11 @@ The result.
 
 I got the refrence holder from arelektronik when I got the IR reader, and have modified it to fit on my water meter, there can be some enhancments done so it will stay in place.
 The 3D print files will be added when I have them.
+
+Inspiration for the holder.
+https://www.thingiverse.com/thing:5179312
+https://www.thingiverse.com/thing:5615493
+
 
 ![3D](https://raw.githubusercontent.com/SysAdminDk/EspHome/main/IR%20-%20Heating%20Meter%20Reader/images/holder-print.png)
 
