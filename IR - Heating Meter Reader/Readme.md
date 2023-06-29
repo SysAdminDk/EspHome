@@ -18,11 +18,11 @@ https://www.ebay.com/itm/255303527301
 
 
 There needs to connected some wires from the IR to the ESP12F to replace the ESP-01 as shown here.
-![Esp12f-IR](https://github.com/SysAdminDk/EspHome/blob/553e320091f953609b2eac8c876f1675a864e334/IR%20-%20Water%20Meter%20Reader/images/Esp12f-IR.png?raw=true)
+![Esp12f-IR](https://raw.githubusercontent.com/SysAdminDk/EspHome/main/IR%20-%20Heating%20Meter%20Reader/images/images/Esp12f-IR.png?raw=true)
 
 The result.
 
-![Esp12f-IR](https://github.com/SysAdminDk/EspHome/blob/553e320091f953609b2eac8c876f1675a864e334/IR%20-%20Water%20Meter%20Reader/images/ESP12-in-place.PNG?raw=true)
+![Esp12f-IR](https://raw.githubusercontent.com/SysAdminDk/EspHome/main/IR%20-%20Heating%20Meter%20Reader/images/images/ESP12-in-place.PNG?raw=true)
 
 
 
@@ -30,8 +30,8 @@ I got the refrence holder from arelektronik when I got the IR reader, and have m
 The 3D print files will be added when I have them.
 
 
-![3D-Bottom](https://raw.githubusercontent.com/SysAdminDk/EspHome/553e320091f953609b2eac8c876f1675a864e334/IR%20-%20Heating%20Meter%20Reader/images/holder-print-back.jpg?raw=true)
-![3D-Top](https://raw.githubusercontent.com/SysAdminDk/EspHome/553e320091f953609b2eac8c876f1675a864e334/IR%20-%20Heating%20Meter%20Reader/images/holder-print-top.jpg?raw=true)
-![3D-Front](https://raw.githubusercontent.com/SysAdminDk/EspHome/553e320091f953609b2eac8c876f1675a864e334/IR%20-%20Heating%20Meter%20Reader/images/holder-print-front.jpg?raw=true)
-![3D](https://raw.githubusercontent.com/SysAdminDk/EspHome/553e320091f953609b2eac8c876f1675a864e334/IR%20-%20Heating%20Meter%20Reader/images/holder-print.png?raw=true)
+![3D-Bottom](https://raw.githubusercontent.com/SysAdminDk/EspHome/main/IR%20-%20Heating%20Meter%20Reader/images/holder-print-back.jpg?raw=true)
+![3D-Top](https://raw.githubusercontent.com/SysAdminDk/EspHome/main/IR%20-%20Heating%20Meter%20Reader/images/images/holder-print-top.jpg?raw=true)
+![3D-Front](https://raw.githubusercontent.com/SysAdminDk/EspHome/main/IR%20-%20Heating%20Meter%20Reader/images/images/holder-print-front.jpg?raw=true)
+![3D](https://raw.githubusercontent.com/SysAdminDk/EspHome/main/IR%20-%20Heating%20Meter%20Reader/images/images/holder-print.png?raw=true)
 
