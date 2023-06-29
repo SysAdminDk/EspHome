@@ -21,6 +21,7 @@ There needs to connected some wires from the IR to the ESP12F to replace the ESP
 ![Esp12f-IR](https://github.com/SysAdminDk/EspHome/blob/553e320091f953609b2eac8c876f1675a864e334/IR%20-%20Water%20Meter%20Reader/images/Esp12f-IR.png?raw=true)
 
 The result.
+
 ![Esp12f-IR](https://github.com/SysAdminDk/EspHome/blob/553e320091f953609b2eac8c876f1675a864e334/IR%20-%20Water%20Meter%20Reader/images/ESP12-in-place.PNG?raw=true)
 
 
