@@ -31,7 +31,7 @@ I got the refrence holder from arelektronik when I got the IR reader, and have m
 The 3D print files will be added when I have them.
 
 
-![3D-Bottom](https://raw.githubusercontent.com/SysAdminDk/EspHome/main/IR%20-%20Heating%20Meter%20Reader/images/holder-print-back.jpg)
+
 ![3D-Top](https://raw.githubusercontent.com/SysAdminDk/EspHome/main/IR%20-%20Heating%20Meter%20Reader/images/images/holder-print-top.jpg?raw=true)
 ![3D-Front](https://raw.githubusercontent.com/SysAdminDk/EspHome/main/IR%20-%20Heating%20Meter%20Reader/images/holder-print-front.jpg)
 ![3D](https://raw.githubusercontent.com/SysAdminDk/EspHome/main/IR%20-%20Heating%20Meter%20Reader/images/images/holder-print.png?raw=true)
