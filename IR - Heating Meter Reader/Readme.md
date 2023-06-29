@@ -1,5 +1,6 @@
 Upload kmp.h and multicalwater.h to /config/esphome, and create a new device in Esphome using the district-water-reader.yaml as refrence.
 Inspiration for the code.
+
 https://github.com/cenobitedk/esphome_multical402
 
 
@@ -36,6 +37,7 @@ The 3D print files will be added when I have them.
 
 Inspiration for the holder.
 https://www.thingiverse.com/thing:5179312
+
 https://www.thingiverse.com/thing:5615493
 
 
