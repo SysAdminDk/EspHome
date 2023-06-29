@@ -18,12 +18,12 @@ https://www.ebay.com/itm/255303527301
 
 
 There needs to connected some wires from the IR to the ESP12F to replace the ESP-01 as shown here.
-![Esp12f-IR](https://raw.githubusercontent.com/SysAdminDk/EspHome/main/IR%20-%20Heating%20Meter%20Reader/images/Esp12f-IR.png?raw=true)
+![Esp12f-IR](https://raw.githubusercontent.com/SysAdminDk/EspHome/main/IR%20-%20Heating%20Meter%20Reader/images/Esp12f-IR.png)
 
 
 The result.
 
-![Esp12f-InPlace](https://raw.githubusercontent.com/SysAdminDk/EspHome/main/IR%20-%20Heating%20Meter%20Reader/images/ESP12-in-place.PNG?raw=true)
+![Esp12f-InPlace](https://raw.githubusercontent.com/SysAdminDk/EspHome/main/IR%20-%20Heating%20Meter%20Reader/images/ESP12-in-place.PNG)
 
 
 
@@ -31,7 +31,7 @@ I got the refrence holder from arelektronik when I got the IR reader, and have m
 The 3D print files will be added when I have them.
 
 
-
-![3D-Top](https://raw.githubusercontent.com/SysAdminDk/EspHome/main/IR%20-%20Heating%20Meter%20Reader/images/images/holder-print-top.jpg?raw=true)
+![3D-Bottom](https://raw.githubusercontent.com/SysAdminDk/EspHome/main/IR%20-%20Heating%20Meter%20Reader/images/holder-print-back.jpg)
+![3D-Top](https://raw.githubusercontent.com/SysAdminDk/EspHome/main/IR%20-%20Heating%20Meter%20Reader/images/holder-print-top.jpg)
 ![3D-Front](https://raw.githubusercontent.com/SysAdminDk/EspHome/main/IR%20-%20Heating%20Meter%20Reader/images/holder-print-front.jpg)
 ![3D](https://raw.githubusercontent.com/SysAdminDk/EspHome/main/IR%20-%20Heating%20Meter%20Reader/images/images/holder-print.png?raw=true)
