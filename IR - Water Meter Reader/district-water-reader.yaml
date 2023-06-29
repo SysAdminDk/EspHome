@@ -1,0 +1,133 @@
+esphome:
+  name: "district-water-reader"
+  friendly_name: "District water reader"
+  includes:
+  - kmp.h
+  - multicalwater.h
+
+esp8266:
+  board: d1_mini
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  encryption:
+    key: ""
+
+ota:
+  password: ""
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "${name}"
+    password: ""
+
+captive_portal:
+    
+mdns:
+  disabled: false
+
+web_server:
+  port: 80
+
+# --------------------------------------------------
+# Multical UART
+# --------------------------------------------------
+uart:
+  - id: uart_bus
+    rx_pin: D2
+    tx_pin: D1
+    baud_rate: 1200
+    data_bits: 8
+    parity: NONE
+    stop_bits: 1
+
+# --------------------------------------------------
+# Multical Custom Sensor (first variable is update interval in ms;)
+# 3600000 is 1 hour
+# 300000 = 5 min
+# 60000 = 1 min
+# 10000 = 10 sec
+# --------------------------------------------------
+custom_component:
+  - lambda: |-
+      auto multicalwater = new Multicalwater(
+        300000,
+        id(uart_bus),
+        id(m_flow),
+        id(m_volume),
+        id(m_hourcounter));
+      App.register_component(multicalwater);
+      return {multicalwater};
+    components:
+      - id: multical
+
+
+sensor:
+# --------------------------------------------------
+# Multical Sensors
+# --------------------------------------------------
+  - name: "Water : Meter Uptime"
+    platform: template
+    id: m_hourcounter
+    icon: "mdi:clock-time-five-outline"
+    unit_of_measurement: "h"
+    state_class: "total_increasing"
+    accuracy_decimals: 0
+
+  - name: "Water : Flow"
+    platform: template
+    id: m_flow
+    icon: "mdi:waves"
+    unit_of_measurement: "l/m"
+    accuracy_decimals: 3
+    state_class: "measurement"
+
+  - name: "Water : Volume"
+    platform: template
+    id: m_volume
+    unit_of_measurement: "m³"
+    accuracy_decimals: 3
+    device_class: water
+    state_class: total_increasing
+
+
+# --------------------------------------------------
+# Wifi signal sensors
+# --------------------------------------------------
+  - platform: wifi_signal # Reports the WiFi signal strength/RSSI in dB
+    name: "Diag : WiFi Signal dB"
+    id: wifi_signal_db
+    update_interval: 60s
+    entity_category: "diagnostic"
+
+  - platform: copy # Reports the WiFi signal strength in %
+    source_id: wifi_signal_db
+    name: "Diag : WiFi Signal Percent"
+    filters:
+      - lambda: return min(max(2 * (x + 100.0), 0.0), 100.0);
+    unit_of_measurement: "Signal %"
+    entity_category: "diagnostic"
+
+# --------------------------------------------------
+# Reset button
+# --------------------------------------------------
+button:
+  # Create a button on web to reset device
+  - platform: restart
+    name: "Ctrl : Device Restart"
+
+text_sensor:
+  - platform: wifi_info
+    ip_address:
+      name: "Diag : IP Address"
+    ssid:
+      name: "Diag : Connected SSID"
+    mac_address:
+      name: "Diag : Mac Address"
