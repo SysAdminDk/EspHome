@@ -27,6 +27,8 @@ The result.
 
 
 I got the refrence holder from arelektronik when I got the IR reader, and have modified it to fit on my water meter, there can be some enhancments done so it will stay in place.
+The 3D print files will be added when I have them.
+
 
 ![3D-Bottom](https://raw.githubusercontent.com/SysAdminDk/EspHome/553e320091f953609b2eac8c876f1675a864e334/IR%20-%20Water%20Meter%20Reader/images/holder-print-bottom.png?raw=true)
 ![3D-Top](https://raw.githubusercontent.com/SysAdminDk/EspHome/553e320091f953609b2eac8c876f1675a864e334/IR%20-%20Water%20Meter%20Reader/images/holder-print-top.png?raw=true)
