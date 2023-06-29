@@ -16,8 +16,17 @@ I cannot get ESPHome to use serial0 on the ESP8266, so I have replaced it with a
 https://www.ebay.com/itm/255303527301
 
 
+
 There needs to connected some wires from the IR to the ESP12F to replace the ESP-01 as shown here.
 ![Esp12f-IR](https://github.com/SysAdminDk/EspHome/blob/553e320091f953609b2eac8c876f1675a864e334/IR%20-%20Water%20Meter%20Reader/images/Esp12f-IR.png?raw=true)
 
+The result.
+![Esp12f-IR](https://github.com/SysAdminDk/EspHome/blob/553e320091f953609b2eac8c876f1675a864e334/IR%20-%20Water%20Meter%20Reader/images/ESP12-in-place.PNG?raw=true)
+
+
 
 I got the refrence holder from arelektronik when I got the IR reader, and have modified it to fit on my water meter, there can be some enhancments done so it will stay in place.
+
+![3D-Bottom](https://raw.githubusercontent.com/SysAdminDk/EspHome/553e320091f953609b2eac8c876f1675a864e334/IR%20-%20Water%20Meter%20Reader/images/holder-print-bottom.png?raw=true)
+![3D-Top](https://raw.githubusercontent.com/SysAdminDk/EspHome/553e320091f953609b2eac8c876f1675a864e334/IR%20-%20Water%20Meter%20Reader/images/holder-print-top.png?raw=true)
+![3D](https://raw.githubusercontent.com/SysAdminDk/EspHome/553e320091f953609b2eac8c876f1675a864e334/IR%20-%20Water%20Meter%20Reader/images/holder-print.png?raw=true)
