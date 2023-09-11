@@ -33,8 +33,7 @@ There needs to connected some wires from the IR to the ESP12F to replace the ESP
 
 
 I got the refrence holder from arelektronik when I got the IR reader, and have modified it to fit on my water meter, there can be some enhancments done so it will stay in place.
-
-The 3D print files will be added when I have them.
+File can be downloaded here: https://github.com/SysAdminDk/EspHome/blob/main/IR%20-%20Water%20Meter%20Reader/Kamstrup-WaterMeter-IR.stl
 
 
 
