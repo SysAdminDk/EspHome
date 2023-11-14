@@ -1,0 +1,124 @@
+substitutions:
+  # UNIQUE NAME FOR THE DEVICE
+  device: wavin # Case sensitive!!!
+  name: Wavin   # "Friendly name" - not case sensitive!!!
+
+esphome:
+  name: "esp32-modbus-gateway"
+  platform: ESP32
+  board: esp32dev
+  friendly_name: "Genvex & Wavin gateway"
+
+# Enable logging
+logger:
+  level: DEBUG
+  logs:
+    ledc.output: NONE
+
+
+# Enable Home Assistant API
+api:
+  encryption:
+    key: ""
+
+ota:
+  password: ""
+
+mdns:
+  disabled: false
+
+web_server:
+  port: 80
+  auth:
+    username: admin
+    password: !secret web_server_password
+
+ethernet:
+  type: LAN8720
+  mdc_pin: GPIO23
+  mdio_pin: GPIO18
+  clk_mode: GPIO0_IN
+  phy_addr: 1
+  power_pin: GPIO14
+
+status_led:
+  pin: GPIO15
+
+output:
+  - platform: ledc
+    pin: GPIO2
+    id: gpio_2
+
+# Example usage in a light
+light:
+  - platform: monochromatic
+    output: gpio_2
+    name: "network Light"
+
+interval:
+  - interval: 1s
+    then:
+      if:
+        condition:
+          api.connected 
+        then:
+          - output.turn_on: gpio_2
+          - output.ledc.set_frequency:
+              id: gpio_2
+              frequency: "1000Hz"
+          - output.set_level:
+              id: gpio_2
+              level: "80%"    
+        else:
+          - output.turn_off: gpio_2    
+
+packages:
+  remote_package:
+    url: https://github.com/heinekmadsen/esphome_components
+    ref: main
+    files: 
+      - components/genvexv2/optima250.yaml
+    refresh: 0s
+
+uart:
+  - id: uart_1 # Wavin UART
+    rx_pin: GPIO4
+    tx_pin: GPIO5
+    baud_rate: 38400
+    data_bits: 8
+    parity: NONE
+    stop_bits: 1
+  - id: uart_2  # Genvex UART
+    rx_pin: GPIO16
+    tx_pin: GPIO17
+    baud_rate: 19200
+    data_bits: 8
+    parity: EVEN
+    stop_bits: 1
+
+modbus:
+    - id: mod1 # Wavin modbus
+      uart_id: uart_1
+    - id: mod2        # Genvex modbus
+      uart_id: uart_2
+
+modbus_controller:
+    - id: genvex_modbus_controller
+      address: 1
+      modbus_id: mod2
+      update_interval: 60s
+      command_throttle: 10ms
+
+time:
+  - platform: homeassistant
+    id: homeassistant_time
+  - platform: sntp
+    id: sntp_time
+    timezone: Europe/Copenhagen
+    servers:
+      - europe.pool.ntp.org
+
+button:
+  # Create a button on web to reset device
+  - platform: restart
+    name: "Device Restart"
