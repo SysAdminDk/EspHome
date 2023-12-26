@@ -1,3 +1,3 @@
 ### EspHome & Home Assistant
-Repository of my files used in Home Assistant and ESP Home.  
+Repository of my files used in ESPHome for Home Assistant
 
