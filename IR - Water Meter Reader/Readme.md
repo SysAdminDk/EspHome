@@ -1,5 +1,5 @@
 ### Installation
-Upload kmp.h and multicalwater.h to /config/esphome, and create a new device in Esphome using the district-water-reader.yaml as refrence.  
+Upload kmp.h and multicalwater.h to /config/esphome, you can use the file editor, and create a new device in Esphome using the district-water-reader.yaml as refrence.  
 
 Inspiration for the code.  
 https://github.com/cenobitedk/esphome_multical402
@@ -32,7 +32,7 @@ There needs to connected some wires from the IR to the ESP12F to replace the ESP
 
 
 
-I got the refrence holder from arelektronik when I got the IR reader, and have modified it to fit on my water meter, there can be some enhancments done so it will stay in place.
+I got the refrence holder from arelektronik when I got the IR reader, and have modified it to fit on my water meter, there can be done some enhancments so it will stay in place. I just iuse some Double sided tape.  
 File can be downloaded here: https://github.com/SysAdminDk/EspHome/blob/main/IR%20-%20Water%20Meter%20Reader/Kamstrup-WaterMeter-IR.stl
 
 
