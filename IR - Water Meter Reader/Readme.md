@@ -1,5 +1,5 @@
 ### Installation
-Upload kmp.h and multicalwater.h to /config/esphome, you can use the file editor, and create a new device in Esphome using the district-water-reader.yaml as refrence.  
+Upload kmp.h and multicalwater.h to /homeassistant/esphome, you can use the file editor, and create a new device in Esphome using the district-water-reader.yaml as refrence.  
 
 Inspiration for the code.  
 https://github.com/cenobitedk/esphome_multical402
