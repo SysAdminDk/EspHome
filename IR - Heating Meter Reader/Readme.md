@@ -29,7 +29,11 @@ There needs to connected some wires from the IR to the ESP12F to replace the ESP
 
 ### The result.  
 ![Esp12f-InPlace](https://raw.githubusercontent.com/SysAdminDk/EspHome/main/IR%20-%20Heating%20Meter%20Reader/images/ESP12-in-place.PNG)
-
+ 
+ 
+### Kamstrup FlowIQ 2200
+Importent note: This is custom made for reading a Kamstrup FlowIQ 2200, if the 3d printed bracket fits other watermeters is unknown.  
+ 
   
 I got the refrence holder from arelektronik when I got the IR reader, and have modified it to fit on my meter, there can be done some enhancments so it will stay in place. I just iuse some Double sided tape.  
 File can be downloaded here: https://github.com/SysAdminDk/EspHome/blob/main/IR%20-%20Heating%20Meter%20Reader/Kamstrup-HeatingMeter-IR.stl
