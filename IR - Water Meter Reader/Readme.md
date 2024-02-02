@@ -1,9 +1,5 @@
-### Kamstrup FlowIQ 2200
-Importent note: This is custom made for reading a Kamstrup FlowIQ 2200, if the 3d printed bracket fits other watermeters is unknown.  
-
-
 ### Installation
-Upload kmp.h and multicalwater.h to /homeassistant/esphome, you can use the file editor, and create a new device in Esphome using the district-water-reader.yaml as refrence.  
+Upload kmp.h and multicalwater.h to /config/esphome, you can use the file editor, and create a new device in Esphome using the district-water-reader.yaml as refrence.  
 
 Inspiration for the code.  
 https://github.com/cenobitedk/esphome_multical402
@@ -34,6 +30,10 @@ There needs to connected some wires from the IR to the ESP12F to replace the ESP
 
 ![Esp12f-IR](https://github.com/SysAdminDk/EspHome/blob/553e320091f953609b2eac8c876f1675a864e334/IR%20-%20Water%20Meter%20Reader/images/ESP12-in-place.PNG?raw=true)
 
+
+
+### Kamstrup FlowIQ 2200
+Importent note: This is custom made for reading a Kamstrup FlowIQ 2200, if the 3d printed bracket fits other watermeters is unknown.  
 
 
 I got the refrence holder from arelektronik when I got the IR reader, and have modified it to fit on my FlowIQ 2200 water meter, there can be done some enhancments so it will stay in place. I just iuse some Double sided tape.  
