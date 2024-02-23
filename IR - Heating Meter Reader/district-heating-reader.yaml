@@ -3,7 +3,7 @@ esphome:
   friendly_name: "District heating reader"
   includes:
   - kmp.h
-  - multical402.h
+  - multical403.h
 
 esp8266:
   board: d1_mini
