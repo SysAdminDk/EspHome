@@ -57,7 +57,7 @@ uart:
 # --------------------------------------------------
 custom_component:
   - lambda: |-
-      auto multical402 = new Multical402(
+      auto multical403 = new Multical402(
         300000,
         id(uart_bus),
         id(m_energy),
@@ -69,7 +69,7 @@ custom_component:
         id(m_volume),
         id(m_hourcounter));
       App.register_component(multical402);
-      return {multical402};
+      return {multical403};
     components:
       - id: multical
 
