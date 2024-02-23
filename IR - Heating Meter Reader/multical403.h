@@ -1,12 +1,12 @@
-#ifndef _M402_
-#define _M402_
+#ifndef _M403_
+#define _M403_
 
 #include "esphome.h"
 #include "esphome/core/component.h"
 
 #include "kmp.h"
 
-class Multical402 : public PollingComponent
+class Multical403 : public PollingComponent
 {
 public:
   Sensor *sensor_energy{nullptr};
@@ -19,7 +19,7 @@ public:
   Sensor *sensor_hourcounter{nullptr};
 
   // constructor
-  Multical402(
+  Multical403(
       uint32_t update_interval,
       UARTComponent *uart_bus,
       Sensor *m__energy,
